@@ -1,0 +1,28 @@
+
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
+
+
+Welcome to your Meteor project on Cloud9 IDE!
+
+To run your new app open your terminal and type:
+   
+    $ meteor --port $IP:$PORT
+
+
+Happy coding!
+The Cloud9 IDE team
+
+## Support & Documentation
+
+Meteor documentation can be found at http://docs.meteor.com/
+
+#### My Notes ####
+    #Color Palette
+left nav background color: grey darken-4
+left nav text color: grey-text text-lighten-1
+
