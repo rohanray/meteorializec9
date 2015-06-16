@@ -4,7 +4,11 @@ $(document).ready(function() {
     });
 });
 
-Template.navTemp.events({
+/*Router.route('/', function () {
+  this.render('mainBodyRoute');
+});*/
+
+Template.sideNavTemp.events({
     "click .feedsAll": function(event) {
         Session.set("whichMainPanel", "feedsAll");
         console.log("whichMainPanel : "+Session.get("whichMainPanel"));
@@ -14,7 +18,8 @@ Template.navTemp.events({
         console.log("whichMainPanel : "+Session.get("whichMainPanel"));
     },
     "click .campaignsAll": function(event) {
-        Session.set("whichMainPanel", "campaignsAll");
+        /*Session.set("whichMainPanel", "campaignsAll");*/
+        Session.set("whichMainPanel", "campaignsFacebook");
     },
     "click .sideNavEmailItem": function(event) {
         Session.set("whichMainPanel", "email");
@@ -22,7 +27,7 @@ Template.navTemp.events({
     "click .sideNavAnalyticsItem": function(event) {
         Session.set("whichMainPanel", "analytics");
     },
-})
+});
 
 Template.mainContentWrapper.helpers({
     whichMainPanelHelper:function(){
@@ -37,9 +42,9 @@ Template.mainContentWrapper.helpers({
         
         return whichMainPanelVar;
     }
-})
+});
 
-Template.navTemp.helpers({
+Template.sideNavTemp.helpers({
     whichMainPanelHelper:function(){
         
         var whichMainPanelVar = Session.get("whichMainPanel");
@@ -52,4 +57,4 @@ Template.navTemp.helpers({
         
         return whichMainPanelVar;
     }
-})
+});
